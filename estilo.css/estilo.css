@@ -1,0 +1,90 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*limita os elementos para a borda da caixa*/
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*organiza os itens de forma horizontal na flexbox*/
+    
+}
+
+.logo {
+    margin-left: 10px;
+    color: rgba(238, 89, 188, 0.685);
+    font-family: 'Arial black', 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+.container{
+    margin-left: 10px;
+}
+
+/*trabalhando o corpo do site*/
+
+.filme-principal  {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../imagens/patrulha-canina.jpg');
+    height: 400px;
+    background-size: cover; /*especifica o tamanho do background na caixa*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /*inicia os itens a esquerda*/
+}
+
+.descricao {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    transition: .3s ease all;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
